@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'learn_rust'",
+            "program": "${workspaceFolder}/target/debug/learn_rust.exe",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=learn_rust",
+                    "--package=learn_rust"
+                ],
+                "filter": {
+                    "name": "learn_rust",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "externalTerminal",  //外部控制台运行rust程序
+        }
+    ]
+}
